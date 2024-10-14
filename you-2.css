@@ -1,0 +1,429 @@
+.nav{
+    height:55px;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 100;
+    border-bottom: 1px solid rgb(228,228,228);
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom:40px;
+}
+.left-section{
+    display:flex;
+    align-items: center;
+}
+.bars{
+    margin-left:24px;
+    margin-right:24px;
+    height:24px;
+}
+.logo{
+    height:20px;
+}
+.mid-section{
+    flex: 1;
+    max-width: 500px;
+    margin-left:75px;
+    margin-right:35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-box{
+    flex: 1;
+    height:36px;
+    padding-left:10px;
+    box-shadow: inset 1px 2px 3px rgb(0,0,0,0.5);
+    border: 1px solid rgb(192,192,192);
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Roboto,Arial;
+}
+.search-btn{
+    margin-left:-1px;
+    height:40px;
+    width:66px;
+    border: 1px solid rgb(192,192,192);
+    margin-right:10px;
+    position: relative;
+}
+.tooltip{
+    position: absolute;
+    bottom:-30px;
+    background-color: gray;
+    color:#fff;
+    padding:4px 8px;
+    border-radius: 2px;
+    cursor: pointer;
+    pointer-events: none;
+    transition: opacity 0.15s;
+    opacity:0;
+    font-size: 12px;
+    font-family: Roboto,Arial;
+    white-space: nowrap;
+}
+.search-btn:hover .tooltip{
+    opacity:1;
+}
+.search-icon{
+    height:24px;
+}
+
+.vs-btn{
+    width:40px;
+    height:40px;
+    background-color: rgb(235,235,235);
+    border: none;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vs-icon{
+    height:24px;
+}
+.vs-btn:hover .tooltip{
+    opacity:1;
+}
+.right-section{
+    display: flex;
+    width:180px;
+    flex-shrink: 0;
+    margin-right:20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.tool{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right-section img{
+    height:24px;
+}
+.sub-title{
+    position: absolute;
+    bottom:-37px;
+    background-color: gray;
+    color: #fff;
+    padding:4px 8px;
+    border-radius: 2px;
+    transition: opacity 0.15s;
+    opacity:0;
+    cursor: pointer;
+    pointer-events: none;
+    white-space: nowrap;
+    font-size: 12px;
+    font-family: Roboto,Arial;
+}
+.tool:hover .sub-title{
+    opacity:1;
+}
+.push{
+    position: relative;
+}
+.count{
+    position: absolute;
+    top:-2px;
+    right:-5px;
+    padding:2px 5px;
+    border-radius: 10px;
+    background-color:rgb(200,0,0);
+    color:#fff;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: Roboto,Arial;
+    border: none;
+}
+.prof{
+    height:32px;
+    border-radius: 20px;
+    border: 2px solid rgb(200,0,0);
+}
+body{
+    padding-top:65px;
+    padding-bottom: 20px;
+}
+/*==================SideBar section=====================*/
+.sidebar{
+    top:72px;
+    border-radius: 3px;
+    position: absolute;
+    padding-top: 490px;
+    right:0;
+    bottom:0;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    width:415px;
+    margin-left:20px;
+}
+.side-grid{
+    display: grid;
+    padding: 10px 5px;
+    grid-template-columns:190px 1fr;
+    row-gap:10px;
+    column-gap: 5px;
+    background-color: rgb(235,235,235);
+    border-radius: 5px;
+    
+    margin-top: 55px;
+    margin-left:2px;
+}
+.thumb{
+    height:110px;
+    width:100%;
+}
+.title{
+    margin-top:0;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: roboto,Arial;
+    margin-bottom: 5px;
+
+}
+.author, .views{
+    margin-top:0px;
+    font-size: 13px;
+    color:rgb(96,96,96);
+    margin-bottom: 3px;
+}
+/*==================Video screen section================*/
+.main-container{
+    padding-left: 2%;
+    width:64%;
+    padding-right:2%;
+}
+.video-cont{
+    max-width:885px;
+}
+video{
+    margin-top:3px;
+    width:100%;
+}
+.tags{
+    margin-bottom:0px;
+}
+.container{
+    margin-top: 0px;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+}
+.heading{
+    margin-top: 5px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    font-family: Roboto,Arial;
+    margin-bottom: 5px;
+}
+.view-data{
+    margin-top: 12px;
+    font-size: 15px;
+    color:rgb(96,96,96);
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.set{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 12px;
+    padding-bottom: 0;
+    height:20px;
+    margin-right:5px;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.like-btn,.dlike-btn,.share-btn,.save-btn{
+    background-color: transparent;
+    border: none;
+    height: 20px;
+}
+.like-btn:clicked{
+    color:dodgerblue;
+}
+button img{
+    height:18px;
+}
+span{
+    font-size: 15px;
+    padding-left:2px;
+    margin-right:5px;
+}
+/*channel description section*/
+.c-info{
+    display: grid;
+    grid-template-columns: 50px 1fr 125px;
+    height:45px;
+}
+.profile{
+    width:42px;
+    border: 2px solid rgb(200,0,0);
+    margin-left:10p;
+    border-radius: 50%;
+}
+.name{
+    margin-top: 9px;
+    margin-left:10px;
+    font-size: 16px;
+    font-weight:600;
+    margin-bottom: 5px;
+    font-family: Roboto,Arial;
+}
+.subs-count{
+    font-size: 13px;
+    font-weight: 500;
+    font-family: Roboto,Arial;
+    margin-top:0;
+    margin-left:10px;
+    color:rgb(96,96,96);
+}
+.description{
+    margin-top: 0px;
+}
+.des1, .des2{
+    margin-left:60px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 3px;
+    color: rgb(96,96,96);
+}
+.sub-btn{
+    padding:10px 16px;
+    background-color: rgb(200,0,0);
+    color:#fff;
+    margin-top:8px;
+    margin-right: 5px;
+    border-radius: 2px;
+    border: none;
+}
+.com-count{
+    font-size:16px;
+    font-weight: 600;
+    font-family: Roboto,Arial;
+    margin-top:10px;
+    color: gray;
+}
+.UC-com{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    column-gap: 10px;
+}
+.user{
+    width:40px;
+    background-color: cadetblue;
+    border: 1px solid #000;
+    border-radius: 20px;
+    margin-right: 10px;
+
+}
+.ins{
+    width:700px;
+    margin-top:0;
+    height:36px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Roboto,Arial;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    padding-right:55px;
+    position:relative
+}
+
+#send{
+    position: absolute;
+    padding:14px 16px;
+    margin-top:-5px;
+    font-size: 15px;
+    font-weight: 550;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border:none;
+    background: transparent;
+    color:#000;
+    border-radius: 18px;
+    margin-left: -60px;
+}
+/*====================OLD COMMENTS==================*/
+.old-comments{
+    margin-top: 20px;
+    width:100%;
+    
+}
+.com-cont{
+    margin-left:50px;
+    margin-top:-40px;
+    display: flex;
+    flex-direction: row;
+}
+.user1{
+    margin-top:0px;
+    width:40px;
+    border-radius: 20px;
+}
+.Username{
+    font-size: 18px;
+    font-weight: 500;
+    margin-left:10px;
+    margin-top: 0px;
+    height:18px;
+    font-family: Roboto Arila;
+    white-space: nowrap;
+}
+.day-count{
+    font-size:14px;
+    margin-top:1px;
+    font-weight:500;
+    color: rgb(96,96,96);
+    height: 14px;
+    font-family: roboto,Arial;
+    margin-left: 10px;
+}
+.comment{
+    display: flex;
+    flex:1;
+    margin-top: 5px;
+    margin-left:58px;
+    font-size: 14px;
+    color:rgb(96,96,96);
+    font-weight: 500;
+    padding-right:20px;
+    font-family: Roboto,Arial;
+}
+
+
+.setx{
+    margin-top: 5px;
+    margin-left:58px;
+    display: flex;
+    flex-direction: row;
+    width:400px;
+    align-items: center;
+}
+.Alike,.Dlike{
+    background-color: transparent;
+    border: none;
+}
+.likex,.dlikex{
+    height:24px;
+}
+.di-like,.di-dlike{
+    margin-left:10px;
+    margin-right:25px;
+    color:rgb(96,96,96);
+}
+.rep{
+    color:rgb(42, 80, 194);
+}
